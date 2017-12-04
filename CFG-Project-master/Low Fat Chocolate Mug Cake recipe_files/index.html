@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title> Java Script </title>
+
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Low Fat Choc!</h1>
+
+    <ul id="fruit-list"
+         <li>Uni Recipes</li>
+         <li>Irresistable!</li>
+         <li>Sign up below for weekly new recipe</li>
+     </ul>
+
+     <form>
+
+     	<label for="name">Name</label>
+     	<input type="text" name="name" id="name" />
+        <label for='email'>Email</label>
+        <input type="text" email="Email" id="Email" />
+
+     	<input value="Click me" type="button" onClick="alert('You clicked me!')">
+
+     	<input value="Hide me" type="button" onClick="hideTitle()">
+     	<input value="Change Background" type="button" onClick="changeBackground()">
+
+     	<input value="Try Me!" type="button" onClick="nameWrite()">
+     </form>
+     <div class="container">
+  <div class="alert alert-success" role="alert">
+  This is a success alert—check it out!
+  <button type="button" class="btn btn-danger">Danger</button>
+  <a href="2nd Index.html" class="btn btn-info" role="button" aria-pressed="true">Secondary link</a>
+  <a href="3rd Index.html" class="btn btn-light" role="button" aria-pressed="true">Third link</a>
+</div>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="..." alt="blossom tokyo">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Third slide">
+    </div>
+  </div>
+
+     <script>
+     	function hideTitle()
+     	{
+     		$('h1').css('font-size', '80px');
+     	    /*$('h1').hide()*/
+     	}
+
+     	function changeBackground()
+     	{
+     		$('*').css('background-color', 'purple');
+     	}
+
+     	function nameWrite()
+     	{
+     		var nameValue = document.getElementById("name").value;
+     		document.write(nameValue);
+     	}
+     </script>
+     <div class="media">
+  <img class="mr-3" src='mug cakes.jpg' alt="Generic placeholder image">
+  <div class="media-body">
+    <h5 class="mt-0">Media heading</h5>
+    Click on website.....testing.
+  </div>
+</body>
+
+</html>
